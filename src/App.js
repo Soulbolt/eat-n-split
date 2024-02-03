@@ -58,6 +58,18 @@ function Friend({ friend }) {
         </p>
       )}
       {friend.balance === 0 && <p>You and {friend.name} are even.</p>}
+
+      <button className="button">Select</button>
     </li>
+  );
+}
+
+function FormAddFriend() {
+  return (
+    <form className="form-add-friend">
+      <label>🧑🏽‍🤝‍👩🏼 Friend name</label>
+      <input type="text" />
+      <label>📷 Image URL</label>
+    </form>
   );
 }
