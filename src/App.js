@@ -57,6 +57,9 @@ export default function App() {
           : friend
       )
     );
+
+    //close split bill form after clicking on split bill button
+    setSelectedFriend(null);
   }
 
   return (
